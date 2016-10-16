@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="tTAKTK1s" name="TsunamInit" projectType="guiapp" juceLinkage="amalg_multi"
+              juceFolder="../../../juce" jucerVersion="4.2.3" version="1.0.0"
+              buildVST="1" buildRTAS="0" buildAU="1" vstFolderMac="~/SDKs/vstsdk2.4"
+              vstFolderPC="c:\SDKs\vstsdk2.4" rtasFolderMac="~/SDKs/PT_80_SDK"
+              rtasFolderPC="c:\SDKs\PT_80_SDK" pluginName="HelloWorld" pluginDesc="HelloWorld"
+              pluginManufacturer="yourcompany" pluginManufacturerCode="abcd"
+              pluginCode="Abcd" pluginChannelConfigs="{1, 1}, {2, 2}" pluginIsSynth="0"
+              pluginWantsMidiIn="0" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
+              pluginTailLength="0" pluginEditorRequiresKeys="0" pluginAUExportPrefix="HelloWorldAU"
+              pluginAUViewClass="HelloWorldAU_V1" pluginRTASCategory="" bundleIdentifier="com.robertsonics.tapedit"
+              companyName="Robertsonics" includeBinaryInAppConfig="1">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+               objCExtraSuffix="JtTAKTK1s">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="TsunamInit"
+                       osxSDK="1" osxCompatibility="10.6 SDK" osxArchitecture="default"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="TsunamInit"
+                       osxSDK="1" osxCompatibility="10.6 SDK" osxArchitecture="default"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="/Juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="/Juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="/Juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="/Juce/modules"/>
+        <MODULEPATH id="juce_core" path="/Juce/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/Linux">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="TsunamInit"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="2"
+                       targetName="TsunamInit"/>
+      </CONFIGURATIONS>
+    </LINUX_MAKE>
+    <VS2015 targetFolder="Builds/VisualStudio2015" vstFolder="" externalLibraries="Setupapi.lib">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="TsunamInit"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="3" targetName="TsunamInit"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_gui_extra" path="c:/Juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="c:/Juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="c:/Juce/modules"/>
+        <MODULEPATH id="juce_events" path="c:/Juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="c:/Juce/modules"/>
+        <MODULEPATH id="juce_core" path="c:/Juce/modules"/>
+      </MODULEPATHS>
+    </VS2015>
+  </EXPORTFORMATS>
+  <MAINGROUP id="a0m6ZvX1F" name="TsunamInit">
+    <GROUP id="GVpTv8yA5" name="Source">
+      <FILE id="vG6e2t" name="MCFunctions.h" compile="0" resource="0" file="Source/MCFunctions.h"/>
+      <FILE id="YpnTDb" name="Commands.h" compile="0" resource="0" file="Source/Commands.h"/>
+      <FILE id="W3k3gN" name="Communicator.cpp" compile="1" resource="0"
+            file="Source/Communicator.cpp"/>
+      <FILE id="MrKlS9" name="Communicator.h" compile="0" resource="0" file="Source/Communicator.h"/>
+      <FILE id="hYoeTQ" name="mac_Serial.cpp" compile="1" resource="0" file="Source/mac_Serial.cpp"/>
+      <FILE id="eJf5V0" name="Serial.h" compile="0" resource="0" file="Source/Serial.h"/>
+      <FILE id="YEfF35" name="win32_Serial.cpp" compile="1" resource="0"
+            file="Source/win32_Serial.cpp"/>
+      <FILE id="wm1yCLKYK" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="Ir0rGDFpT" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="Plz1QicEA" name="MainComponent.h" compile="0" resource="0"
+            file="Source/MainComponent.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS/>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1"/>
+    <MODULE id="juce_events" showAllCode="1"/>
+    <MODULE id="juce_graphics" showAllCode="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1"/>
+  </MODULES>
+</JUCERPROJECT>
