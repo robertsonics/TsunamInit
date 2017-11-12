@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Projucer version: 4.2.3
+  Created with Projucer version: 4.3.0
 
   ------------------------------------------------------------------------------
 
@@ -37,8 +37,8 @@
 */
 class MainComponent  : public Component,
                        public ChangeListener,
-                       public ButtonListener,
                        public ComboBoxListener,
+                       public ButtonListener,
                        public SliderListener
 {
 public:
@@ -67,8 +67,8 @@ public:
 
     void paint (Graphics& g) override;
     void resized() override;
-    void buttonClicked (Button* buttonThatWasClicked) override;
     void comboBoxChanged (ComboBox* comboBoxThatHasChanged) override;
+    void buttonClicked (Button* buttonThatWasClicked) override;
     void sliderValueChanged (Slider* sliderThatWasMoved) override;
 
 
@@ -85,10 +85,10 @@ private:
     //[/UserVariables]
 
     //==============================================================================
+    ScopedPointer<GroupComponent> groupComponent2;
     ScopedPointer<GroupComponent> groupComponent4;
     ScopedPointer<GroupComponent> groupComponent3;
     ScopedPointer<GroupComponent> groupComponent;
-    ScopedPointer<TextButton> quitButton;
     ScopedPointer<Label> statusBar;
     ScopedPointer<ComboBox> functionBox;
     ScopedPointer<ComboBox> typeBox;
@@ -99,10 +99,9 @@ private:
     ScopedPointer<TextButton> newButton;
     ScopedPointer<TextButton> openButton;
     ScopedPointer<TextButton> saveAsButton;
-    ScopedPointer<GroupComponent> groupComponent2;
     ScopedPointer<Label> label2;
     ScopedPointer<Label> label3;
-    ScopedPointer<Label> label4;
+    ScopedPointer<Label> labelRange;
     ScopedPointer<ComboBox> baudBox;
     ScopedPointer<Label> label;
     ScopedPointer<Slider> vol1Slider;
@@ -118,8 +117,8 @@ private:
     ScopedPointer<Label> label6;
     ScopedPointer<ToggleButton> retriggerToggle;
     ScopedPointer<TextButton> resetButton;
-    ScopedPointer<Label> label8;
-    ScopedPointer<Label> label9;
+    ScopedPointer<Label> labelLow;
+    ScopedPointer<Label> labelHigh;
     ScopedPointer<Label> label10;
     ScopedPointer<TextButton> testButton;
     ScopedPointer<ComboBox> portBox;
@@ -127,7 +126,7 @@ private:
     ScopedPointer<ComboBox> testBaudBox;
     ScopedPointer<Label> label12;
     ScopedPointer<Slider> trigVolSlider;
-    ScopedPointer<Label> label7;
+    ScopedPointer<Label> labelTriggerVol;
     ScopedPointer<TextButton> stopButton;
     ScopedPointer<TextButton> copyButton;
     ScopedPointer<ToggleButton> velocityToggle;
@@ -138,7 +137,7 @@ private:
     ScopedPointer<ToggleButton> noteOffToggle;
     ScopedPointer<ToggleButton> loopToggle;
     ScopedPointer<ComboBox> outputBox;
-    ScopedPointer<Label> label13;
+    ScopedPointer<Label> labelOutput;
     ScopedPointer<Slider> vol2Slider;
     ScopedPointer<Label> label14;
     ScopedPointer<Slider> vol3Slider;
@@ -146,6 +145,23 @@ private:
     ScopedPointer<Slider> vol4Slider;
     ScopedPointer<Label> label16;
     ScopedPointer<ToggleButton> lockToggle;
+    ScopedPointer<ComboBox> channelBox;
+    ScopedPointer<Label> channelText;
+    ScopedPointer<ToggleButton> toggleOut1;
+    ScopedPointer<ToggleButton> toggleOut2;
+    ScopedPointer<ToggleButton> toggleOut3;
+    ScopedPointer<ToggleButton> toggleOut4;
+    ScopedPointer<Label> label17;
+    ScopedPointer<Slider> vol5Slider;
+    ScopedPointer<Label> labelOut5;
+    ScopedPointer<Slider> vol6Slider;
+    ScopedPointer<Label> labelOut6;
+    ScopedPointer<Slider> vol7Slider;
+    ScopedPointer<Label> labelOut7;
+    ScopedPointer<Slider> vol8Slider;
+    ScopedPointer<Label> labelOut8;
+    ScopedPointer<ComboBox> modeBox;
+    ScopedPointer<Label> label4;
 
 
     //==============================================================================

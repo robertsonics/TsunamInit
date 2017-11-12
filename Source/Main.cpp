@@ -21,7 +21,7 @@ class InitUtilWindow  : public DocumentWindow
 public:
     //==============================================================================
     InitUtilWindow()
-        : DocumentWindow ("Robertsonics : Tsunami Init File Editor v0.21",
+        : DocumentWindow ("Robertsonics : Tsunami Configurator v0.31",
                           Colours::lightgrey,
                           DocumentWindow::allButtons,
                           true)

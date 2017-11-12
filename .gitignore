@@ -4,5 +4,7 @@
 *.suo
 *.aps
 *.user
+TsunamInit.VC.db
 [Dd]ebug
 [Rr]elease
+
